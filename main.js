@@ -1,7 +1,8 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
+import * as THREE from './node_modules/three/build/three.module.js';
+import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from './node_modules/three/examples/jsm/loaders/DRACOLoader.js';
+
 
 // Scene setup
 const scene = new THREE.Scene();
@@ -14,6 +15,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // Add OrbitControls for interaction
+// FIX: Use the imported OrbitControls directly, not as THREE.OrbitControls
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.25;
@@ -193,6 +195,7 @@ function animate() {
   controls.update();
   renderer.render(scene, camera);
 }
+
 // Variable to track the currently hovered object
 let hoveredObject = null;
 

@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive 3D Room</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Room Scene</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+        }
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+
 </head>
 <body>
-  <div id="info">
-    <h1>Welcome to the Interactive 3D Room</h1>
-    <p>Click on objects to interact. Hover over them to see effects!</p>
-  </div>
-
-  <script type="module" src="main.js"></script>
+    <!-- Your script needs to be loaded as a module -->
+    <script type="module" src="./main.js"></script>
 </body>
 </html>

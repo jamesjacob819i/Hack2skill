@@ -1,16 +1,16 @@
 import { defineConfig } from 'vite';
-import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig({
-  plugins: [viteCompression()],
+  base: './', // Important for GitHub Pages
+  server: {
+    port: 5173,
+  },
   build: {
-    target: 'esnext',
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-      },
+    outDir: 'dist',
+  },
+  resolve: {
+    alias: {
+      three: 'three',
     },
-    chunkSizeWarningLimit: 600,
   },
 });
