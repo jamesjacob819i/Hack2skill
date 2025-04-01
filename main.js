@@ -66,7 +66,7 @@ let laptopObject, grassObject, floorObject, hairObject;
 
 // Load the model
 loader.load(
-  './ROOMWORKINGGIRL.glb',
+  '/models/ROOMWORKINGGIRL.glb',
   (gltf) => {
     const model = gltf.scene;
     console.log('Model loaded successfully:', model);
