@@ -172,12 +172,12 @@ window.addEventListener('click', (event) => {
 
     // Check for laptop interaction
     if (clickedObject === laptopObject) {
-      window.location.href = './laptop.html';
+      window.location.href = '/laptop.html';
     }
 
     // Check for grass interaction
     if (clickedObject === grassObject) {
-      window.location.href = './grass.html';
+      window.location.href = '/grass.html';
     }
   }
 });
