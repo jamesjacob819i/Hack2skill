@@ -14,6 +14,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
 }
 
 body {
@@ -26,14 +28,21 @@ body {
 
 /* Header */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 15px 20px;
-  z-index: 1000; /* Ensures header stays above other content */
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 85% 20px 0px;
+    z-index: 1000; /* Ensures header stays above other content */
+    }
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
 .button-container {
     display: flex;
     gap: 10px;
@@ -327,9 +336,8 @@ header {
     </style>
 </head>
 <body>
-    <!-- Header with buttons -->
     <header>
-        <a href="index.html" class="back-button">← Back</a>
+      <a href="secondary.html" class="back-button">← Back</a>
     </header>
     
     <!-- Main Content -->
