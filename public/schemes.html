@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <link rel="stylesheet" href="schemes.css">
+    <style>
+            body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #008CBA;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #005f73;
+}
+
+#suggestions {
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: #ddd;
+}
+
+#results {
+    margin-top: 20px;
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Find Girl Child Schemes & Laws</h2>
+        <input type="text" id="countryInput" placeholder="Enter your country..." oninput="autocompleteCountry()">
+        <div id="suggestions"></div>
+        <button onclick="fetchSchemes()">Search</button>
+
+        <div id="results">
+            <h3 id="countryTitle"></h3>
+            <h4>Government Schemes:</h4>
+            <ul id="schemesList"></ul>
+            <h4>Crime Laws for Girl Child:</h4>
+            <p id="crimeLaws"></p>
+        </div>
+    </div>
+
+    <script src="schemes.js"></script>
+</body>
+</html>
