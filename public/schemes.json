@@ -1,0 +1,192 @@
+{
+    "India": {
+        "schemes": [
+            {
+                "name": "Beti Bachao Beti Padhao",
+                "description": "A scheme to prevent gender-biased sex selection and promote education for girls."
+            },
+            {
+                "name": "Sukanya Samriddhi Yojana",
+                "description": "A savings scheme for the girl child with high-interest rates and tax benefits."
+            },
+            {
+                "name": "CBSE Udaan Scheme",
+                "description": "Provides free resources to girl students for engineering entrance exams."
+            },
+            {
+                "name": "Balika Samriddhi Yojana",
+                "description": "Financial assistance for girl children born to families below the poverty line."
+            },
+            {
+                "name": "Ladli Scheme",
+                "description": "Financial support for girl child education and welfare."
+            },
+            {
+                "name": "Kanyashree Prakalpa",
+                "description": "A scholarship program for girl students to prevent early marriage."
+            },
+            {
+                "name": "Dhanalakshmi Scheme",
+                "description": "A conditional cash transfer scheme for the education of girl children."
+            },
+            {
+                "name": "Free Bicycle Scheme",
+                "description": "Provides bicycles to school-going girls to improve access to education."
+            },
+            {
+                "name": "Mukhya Mantri Kanya Utthan Yojana",
+                "description": "Provides financial incentives for education and marriage of girl children."
+            },
+            {
+                "name": "Women Helpline Scheme",
+                "description": "A helpline to assist women in distress and provide support services."
+            }
+        ],
+        "crimeLaws": "India has laws like the POCSO Act, Dowry Prohibition Act, and Domestic Violence Act to protect girl children."
+    },
+    "USA": {
+        "schemes": [
+            {
+                "name": "Child Tax Credit",
+                "description": "Provides financial support to families with children."
+            },
+            {
+                "name": "Head Start Program",
+                "description": "Provides early childhood education for low-income families."
+            },
+            {
+                "name": "WIC (Women, Infants, and Children)",
+                "description": "A nutrition program providing food and support for young children."
+            },
+            {
+                "name": "Title IX Education Amendments",
+                "description": "Ensures gender equality in education and athletics."
+            },
+            {
+                "name": "Safe Start Initiative",
+                "description": "Helps prevent and address children's exposure to violence."
+            },
+            {
+                "name": "Juvenile Justice and Delinquency Prevention Act",
+                "description": "Ensures fair treatment of minors in the justice system."
+            },
+            {
+                "name": "Family and Youth Services Bureau",
+                "description": "Provides grants and programs for youth empowerment."
+            },
+            {
+                "name": "Girl Scouts Grants",
+                "description": "Supports leadership and education programs for girls."
+            },
+            {
+                "name": "National School Lunch Program",
+                "description": "Provides free or low-cost lunches in public schools."
+            },
+            {
+                "name": "Violence Against Women Act Grants",
+                "description": "Federal grants for programs addressing domestic violence and child safety."
+            }
+        ],
+        "crimeLaws": "USA enforces child protection laws like Amber Alerts, Safe Haven Laws, and Anti-Human Trafficking Laws."
+    },
+    "UK": {
+        "schemes": [
+            {
+                "name": "Child Benefit",
+                "description": "Provides monthly payments for parents raising children."
+            },
+            {
+                "name": "Sure Start Maternity Grant",
+                "description": "A one-time grant for low-income families expecting a child."
+            },
+            {
+                "name": "Education Maintenance Allowance",
+                "description": "Supports students from low-income families to continue education."
+            },
+            {
+                "name": "Free School Meals",
+                "description": "Ensures free meals for eligible students."
+            },
+            {
+                "name": "Healthy Start",
+                "description": "Provides food and vitamins to pregnant women and young children."
+            },
+            {
+                "name": "Social Mobility Foundation",
+                "description": "Supports young girls in pursuing higher education and careers."
+            },
+            {
+                "name": "Girls’ Education Challenge",
+                "description": "Focuses on improving education access for girls."
+            }
+        ],
+        "crimeLaws": "UK enforces the Child Protection Act, Domestic Abuse Bill, and Gender Equality Act."
+    },
+    "Canada": {
+        "schemes": [
+            {
+                "name": "Canada Child Benefit",
+                "description": "Tax-free monthly payment to support families with children."
+            },
+            {
+                "name": "Women in STEM Initiative",
+                "description": "Encourages girls to pursue STEM education."
+            }
+        ],
+        "crimeLaws": "Canada has strict laws on gender-based violence, child abuse, and equal rights enforcement."
+    },
+    "Australia": {
+        "schemes": [
+            {
+                "name": "Family Tax Benefit",
+                "description": "Provides financial support to families raising children."
+            }
+        ],
+        "crimeLaws": "Australia enforces laws like the Family Law Act and Domestic Violence Protection Act."
+    },
+    "Germany": {
+        "schemes": [
+            {
+                "name": "Kindergeld",
+                "description": "A child benefit program providing financial support to families."
+            }
+        ],
+        "crimeLaws": "Germany enforces strict child protection laws, including the Child Welfare Act."
+    },
+    "France": {
+        "schemes": [
+            {
+                "name": "PAJE (Prestation d'Accueil du Jeune Enfant)",
+                "description": "Financial assistance for families with young children."
+            }
+        ],
+        "crimeLaws": "France enforces gender equality laws and child safety regulations."
+    },
+    "Japan": {
+        "schemes": [
+            {
+                "name": "Angel Plan",
+                "description": "A government initiative to support working mothers and improve childcare services."
+            }
+        ],
+        "crimeLaws": "Japan enforces strict child welfare laws and gender equality regulations."
+    },
+    "Brazil": {
+        "schemes": [
+            {
+                "name": "Bolsa Família",
+                "description": "A conditional cash transfer program supporting low-income families, including education incentives for girls."
+            }
+        ],
+        "crimeLaws": "Brazil enforces the Maria da Penha Law and Child Protection Laws."
+    },
+    "South Africa": {
+        "schemes": [
+            {
+                "name": "Child Support Grant",
+                "description": "Provides financial assistance to low-income families raising children."
+            }
+        ],
+        "crimeLaws": "South Africa enforces the Domestic Violence Act and Child Protection Act."
+    }
+}

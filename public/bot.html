@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Well Wisher for Women</title>
+  
+  <!-- Load CSS with error handling fallback -->
+  <link rel="stylesheet" type="text/css" href="style.css" onerror="console.error('Failed to load style.css')" />
+  
+  <!-- Corrected favicon path to avoid 404 errors -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div class="container">
+    <h1>💜 Well Wisher for Women 💜</h1>
+    
+    <div class="topic-buttons">
+      <button class="topic-btn career-btn" data-topic="career">Career Guidance</button>
+      <button class="topic-btn mental-health-btn" data-topic="mental-health">Mental Health</button>
+      <button class="topic-btn abuse-help-btn" data-topic="abuse">Get Help</button>
+    </div>
+
+    <div id="chat-box">
+      <div id="chat-output">
+        <div class="bot-message">
+          Hello! I'm here to support you with career guidance, mental health concerns, or if you need help reporting abuse. 
+          What would you like to discuss?
+        </div>
+      </div>
+    </div>
+    
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Ask me about mental health, career guidance, or help with abuse..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <!-- Load JavaScript with error handling fallback -->
+  <script src="bot.js" onerror="console.error('Failed to load main.js')"></script>
+
+  <script>
+    // Basic error handler to catch any JavaScript issues
+    window.onerror = function(message, source, lineno, colno, error) {
+      console.error(`Error: ${message} at ${source}:${lineno}:${colno}`);
+    };
+  </script>
+</body>
+</html>
