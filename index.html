@@ -20,10 +20,19 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body>
-
-
-
-    <script type="module" src="babel.config.js"></script>
+    <!-- Import Three.js modules first -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./js/three.module.js",
+                "three/examples/jsm/controls/OrbitControls": "./js/OrbitControls.js",
+                "three/examples/jsm/loaders/GLTFLoader": "./js/GLTFLoader.js",
+                "three/examples/jsm/loaders/DRACOLoader": "./js/DRACOLoader.js"
+            }
+        }
+    </script>
+    
+    <!-- Then load your application code -->
     <script type="module" src="./main.js"></script>
 
 </body>

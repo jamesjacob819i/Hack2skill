@@ -1,0 +1,162 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+#chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fafafa;
+}
+
+.user-message, .bot-message {
+    max-width: 80%;
+    margin: 8px 0;
+    padding: 12px 16px;
+    border-radius: 12px;
+    line-height: 1.4;
+}
+
+.user-message {
+    background: #e3f2fd;
+    margin-left: auto;
+    color: #1565c0;
+}
+
+.bot-message {
+    background: #f3e5f5;
+    margin-right: auto;
+    color: #6a1b9a;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    width: calc(100% - 100px);
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: #6a1b9a;
+}
+
+#send-btn {
+    width: 80px;
+    padding: 12px;
+    background: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+#send-btn:hover {
+    background: #4a148c;
+}
+
+/* Topic buttons */
+.topic-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.topic-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.career-btn {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.mental-health-btn {
+    background: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.abuse-help-btn {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.typing-indicator {
+    color: #999;
+    font-style: italic;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #6a1b9a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.back-button:hover {
+    background: #4a148c;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .topic-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .topic-btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    #user-input {
+        width: calc(100% - 90px);
+    }
+    
+    #send-btn {
+        width: 70px;
+    }
+}

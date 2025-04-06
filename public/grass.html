@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grass View</title>
-    <style>
-        body { 
-            margin: 0;
-            padding: 20px;
-            background-color: #333333;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-        }
-        .content {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .back-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .back-button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Wisher for Women</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" onerror="console.error('Failed to load style.css')" />
+
+    <!-- Favicon removed to prevent 404 error -->
 </head>
 <body>
     <div class="container">
-        <h1>Nature View</h1>
-        <div class="content">
-            <p>This is the grass/nature interaction page. You can add more content about environmental aspects here.</p>
+        <h1>💜 Well Wisher for Women 💜</h1>
+        
+        <div class="topic-buttons">
+            <button class="topic-btn career-btn" data-topic="career">Career Guidance</button>
+            <button class="topic-btn mental-health-btn" data-topic="mental-health">Mental Health</button>
+            <button class="topic-btn abuse-help-btn" data-topic="abuse">Get Help</button>
         </div>
+
+        <div id="chat-box">
+            <div id="chat-output">
+                <div class="bot-message">
+                    Hello! I'm here to support you with career guidance, mental health concerns, or if you need help reporting abuse. 
+                    What would you like to discuss?
+                </div>
+            </div>
+        </div>
+        
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask me about mental health, career guidance, or help with abuse..." />
+            <button id="send-btn">Send</button>
+        </div>
+        
         <a href="index.html" class="back-button">Back to 3D View</a>
     </div>
+    
+    <script src="bot.js" onerror="console.error('Failed to load bot.js')"></script>
+    
+    <script>
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.error(`Error: ${message} at ${source}:${lineno}:${colno}`);
+        };
+    </script>
 </body>
 </html>

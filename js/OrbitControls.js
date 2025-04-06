@@ -1,5 +1,5 @@
 import {
-	Controls,
+	EventDispatcher,
 	MOUSE,
 	Quaternion,
 	Spherical,
@@ -81,10 +81,8 @@ const _EPS = 0.000001;
  *
  * }
  * ```
- *
- * @augments Controls
  */
-class OrbitControls extends Controls {
+class OrbitControls extends EventDispatcher {
 
 	/**
 	 * Constructs a new controls instance.
@@ -94,7 +92,11 @@ class OrbitControls extends Controls {
 	 */
 	constructor( object, domElement = null ) {
 
-		super( object, domElement );
+		super();
+
+		this.object = object;
+		this.domElement = domElement;
+        this.enabled = true;
 
 		this.state = _STATE.NONE;
 
@@ -463,7 +465,7 @@ class OrbitControls extends Controls {
 
 	connect( element ) {
 
-		super.connect( element );
+		this.domElement = element;
 
 		this.domElement.addEventListener( 'pointerdown', this._onPointerDown );
 		this.domElement.addEventListener( 'pointercancel', this._onPointerUp );
